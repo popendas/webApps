@@ -165,7 +165,7 @@ $(function () {
 			}
 			columns.push(`${indent}${c.column} ${builtin(c.dataType)} ${orTrue(c.uq, uq)}${orTrue(c.nn, nn)}${fk}`.trimEnd())
 		})
-		sqlTexts.push(columns.join(",<br>"))
+		sqlTexts.push(columns.join(",<br>") + (sql.pks.length ? "," : ""))
 
 		//主キーの出力
 		if (sql.pks.length) {
