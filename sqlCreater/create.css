@@ -1,0 +1,19 @@
+#resultArea {
+    background-color: #e9ecef;
+    height: 285px;
+    overflow: auto;
+}
+
+#resultArea::-webkit-scrollbar{
+    display: none;
+  }
+
+.cm-keyword {
+    /* color: #708; */
+    color: purple;
+}
+
+.cm-builtin {
+    /* color: #30a; */
+    color: blue;
+}
