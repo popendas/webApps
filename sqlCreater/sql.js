@@ -184,5 +184,7 @@ $(function () {
 		resultArea.html(sql)
 	}
 
+	FKButton()
+	PKButton()
 	popSql()
 })
