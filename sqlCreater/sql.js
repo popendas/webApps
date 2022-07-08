@@ -10,7 +10,7 @@ $(function () {
 	const FKTable = $("#FKTable")
 	const FKColumn = $("#FKColumn")
 	const circle = "◯"
-	const removeButton = '<button class="remove btn btn-danger">削除</button>'
+	const removeButton = '<button class="remove btn btn-danger btn-sm">削除</button>'
 	const SqlTable = $("#SqlTable")
 	const resultArea = $("#resultArea")
 
@@ -52,6 +52,7 @@ $(function () {
 	$(document).on('click', '.remove', function () {
 		$(this).parents('tr').remove();
 		popSql()
+		return false
 	})
 
 	// 表をクリックしたら要素を入力欄に複写
