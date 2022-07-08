@@ -109,8 +109,8 @@ $(function () {
 	tableName.keydown(() => setTimeout(popSql,0))
 
 	// コピーボタン
-	resultArea.click(() => {
-		navigator.clipboard.writeText(resultArea.text())
+	$("#copyButton").click(() => {
+		navigator.clipboard.writeText(resultArea.html().replaceAll("<br>","\n").replaceAll(/(<([^>]+)>)/gi, '').replaceAll("&nbsp;"," "))
 	})
 
 	// createくりえいたー
